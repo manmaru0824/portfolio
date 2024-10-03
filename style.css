@@ -1,0 +1,217 @@
+/*サイトタイトル */
+.sitetitle{
+    margin: 0px 0px 0px 100px;
+    padding: 0px;
+    text-align: left;
+    color: #40534d;
+}
+
+
+
+/* ナビゲーションメニュー */
+.nav_menu {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content:right;
+    color:#40534d;
+    max-width: 900px;
+}
+
+.nav_menu_item{
+    margin: 0px 20px 0px 20px;
+}
+/* スライダーのスタイル設定 */
+.slider_3{
+    position:relative;
+    height: 900px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+.slider_3 ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slider_3 ul img{
+    width: 900px;
+    max-height:600px;
+    margin: 0 auto;
+    padding: 0 auto;
+}    
+.slider_3 ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    animation-iteration-count:infinite ;
+    animation-duration: 21s;
+}    
+/* アニメーションの開始時間設定 */
+.slider_3 ul li:nth-child(1){
+    animation-name: slider_3;
+    animation-delay: -1s;
+}
+.slider_3 ul li:nth-child(2){
+    animation-name: slider_3;
+    animation-delay: 6s;opacity: 0;
+}
+.slider_3 ul li:nth-child(3){
+    animation-name: slider_3;
+    animation-delay: 13s;opacity: 0;
+}    
+/* フェードイン・フェードアウトの設定 */
+@keyframes slider_3{0%{opacity: 0;}
+    4.76%{opacity:1 ;}
+    33.33%{opacity:1 ;}
+    42.85%{opacity:0 ;}
+    100%{opacity:0 ;}
+}
+ /* 画像 */
+.works_photo_item{
+    display: flex;
+}
+.works_photo_items{
+    width: 350px;
+}
+
+/* 電子書籍 */
+.works_books_item{
+    display: flex;
+    width: 50%;
+}
+.works_books_items{
+    width: 400px;
+}
+
+/* カード */
+.works_cards_item{
+    display: flex;
+    width: 300px;
+    justify-content:space-evenly;
+}
+
+.works_cards_items{
+    margin: 20px 20px 20px 20px;
+}
+
+/* コンテンツ幅からはみ出たスライドを薄くする */
+.works_photo_item {
+    .swiper-slide {
+      &:not(.swiper-slide-visible) {
+        .slide {
+          pointer-events: none;
+          opacity: .3;
+        }
+      }
+    }
+  }
+
+/* works帯タイトル */
+#works {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #40534d ;
+    max-width: 900px;
+    color: #ffffff;
+    height: 60px;
+    text-align: center;
+}
+
+/* about帯タイトル */
+#about {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #40534d ;
+    max-width: 900px;
+    color: #ffffff;
+    height: 60px;
+    text-align: center;
+}
+
+/* contact帯タイトル */
+#contact {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #40534d ;
+    max-width: 900px;
+    color: #ffffff;
+    height: 60px;
+    text-align: center;
+}
+.profile_name_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile_photo{
+    max-width: 300px;
+}
+
+.profile_name{
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0 auto;
+}
+
+
+/* About */
+.about {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+.skill_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pc_photo{
+    max-width: 100px;
+}
+
+/* Works */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+
+/* Worksの画像と説明部分 */
+.item {
+    padding-bottom: 60px;
+    width: 25%;
+}
+
+/* Worksの画像と説明部分（2個目） */
+.item_center {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* フッター */
+footer p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+    .item {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
