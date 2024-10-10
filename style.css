@@ -14,6 +14,15 @@ main {
 	margin: 0 auto;
 }
 
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+    main {
+        /* 全体のレイアウトをここで指定します */
+        width: 100%;
+        /* 中央に寄せます */
+        padding-left: 30px;
+        }
+}
 
 /*サイトタイトル */
 .sitetitle{
@@ -41,7 +50,7 @@ main {
 /* スライダーのスタイル設定 */
 .slider_3{
     position:relative;
-    height: 900px;
+    height: 550px;
     margin: 0 auto;
     padding: 0 auto;
     text-align: center;
@@ -120,7 +129,7 @@ main {
     margin: 20px 20px 20px 20px;
 }
 
-/* コンテンツ幅からはみ出たスライドを薄くする */
+/* コンテンツ幅からはみ出たスライドを薄くする
 .works_photo_item {
     .swiper-slide {
       &:not(.swiper-slide-visible) {
@@ -131,16 +140,18 @@ main {
       }
     }
   }
+  */
 
 /* works帯タイトル */
 #works {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     background-color: #40534d ;
     max-width: 900px;
     color: #ffffff;
     height: 60px;
     text-align: center;
+    margin: 0 auto
 }
 
 /* works imgがhoverする設定 */
@@ -192,35 +203,39 @@ main {
 
 /* about帯タイトル */
 #about {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     background-color: #40534d ;
     max-width: 900px;
     color: #ffffff;
     height: 60px;
     text-align: center;
+    margin: 0 auto
 }
 
 /* contact帯タイトル */
 #contact {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     background-color: #40534d ;
     max-width: 900px;
     color: #ffffff;
     height: 60px;
     text-align: center;
+    margin: 0 auto
 }
+
 .profile_name_box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .profile_photo{
     max-width: 300px;
 }
 
 .profile_name{
-    font-size: 50px;
+    font-size: 35px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -240,13 +255,7 @@ p {
     margin: 20px auto 20px auto;
     max-width: 960px;
 }
-.skill_box{
-    display: flex;
-    flex-wrap: wrap;
-}
-.pc_photo{
-    max-width: 100px;
-}
+
 
 /* Works */
 .works {
@@ -269,13 +278,59 @@ p {
     padding-left: 20px;
 }
 
+/*SKILL*/
+.skill_title_language{
+    font-size: 25px;
+}
+.skill_title_works{
+    font-size: 25px;
+}
+.skill_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pc_photo{
+    max-width: 350px;
+    height: fit-content;
+}
+
 /* thoughtsのところ */
 .thoughts_area{
     display: flex;
 }
+/* thoughtsの緑画像の上に文字 */
+.thought_area_title{
+    width:900px;
+    height: 300px;
+    position: relative;
+  }
+.green{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thoughts_title_main{
+    position:absolute;
+    bottom:190px;
+    left:300px;
+    font-size:30px;
+    color: #000000;
+    padding:0;
+    margin:0;
+    font-family: monospace;
+  }
 
 .flower_pic{
-    width: 200px;
+    width: 130px;
+}
+
+.thoughts_p_box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* フッター */
