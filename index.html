@@ -13,12 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  !-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
 </head>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 <body>
   <!-- ナビゲーションメニュー -->
@@ -39,9 +41,9 @@
       <!-- メイン画像 -->
       <div class="slider_3">
         <ul>
-        <li><img src="img/main.jpg" alt="メイン画像" class="mv"></li>
-        <li><img src="img/main2.jpg" alt="メイン画像" class="mv2"></li>
-        <li><img src="img/main3.jpg" alt="メイン画像" class="mv3"></li>
+        <li><img src="../img/main.jpg" alt="メイン画像" class="mv"></li>
+        <li><img src="../img/main2.jpg" alt="メイン画像" class="mv2"></li>
+        <li><img src="../img/main3.jpg" alt="メイン画像" class="mv3"></li>
         </ul>
       </div>
 
@@ -55,30 +57,47 @@
 
         <h2 id="works_photo">画像</h2>
 
-        <div class="works_photo_item">
-          <img src="img/works1.jpg" class="works_photo_items">
-          <img src="img/works2.jpg" class="works_photo_items">
-          <img src="img/works3.jpg" class="works_photo_items">
-          <img src="img/works4.jpg" class="works_photo_items">
-          <img src="img/works5.png" class="works_photo_items">
-          <img src="img/works6.jpg" class="works_photo_items">
-          <img src="img/works7.jpg" class="works_photo_items">
+        <!-- Slider main container -->
+       <div class="swiper">
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
+       <!-- Slides -->
+       <div class="swiper-slide"><img src="../img/works1.jpg" class="works_photo_items"></div>
+       <div class="swiper-slide"><img src="../img/works2.jpg" class="works_photo_items"></div>
+       <div class="swiper-slide"><img src="../img/works3.jpg" class="works_photo_items"></div>
+       <div class="swiper-slide"><img src="../img/works4.jpg" class="works_photo_items"></div>
+       <div class="swiper-slide"><img src="../img/works5.png" class="works_photo_items"></div>
+       <div class="swiper-slide"><img src="../img/works6.jpg" class="works_photo_items"></div>
+     </div>
+     </div>
+
+     <!--   
+     <div class="works_photo_item">
+          <img src="../img/works1.jpg" class="works_photo_items">
+          <img src="../img/works2.jpg" class="works_photo_items">
+          <img src="../img/works3.jpg" class="works_photo_items">
+          <img src="../img/works4.jpg" class="works_photo_items">
+          <img src="../img/works5.png" class="works_photo_items">
+          <img src="../img/works6.jpg" class="works_photo_items">
         </div>
+      -->  
+
 
         <h2 id="works_books">電子書籍</h2>
 
         <div class="works_books_item">
-            <img src="img/books1.jpg" class="works_books_items">
-            <img src="img/books2.jpg" class="works_books_items">
-            <img src="img/books3.jpg" class="works_books_items">
-            <img src="img/books4.jpg" class="works_books_items">
+            <img src="../img/books1.jpg" class="works_books_items">
+            <img src="../img/books2.jpg" class="works_books_items">
+            <img src="../img/books3.jpg" class="works_books_items">
+            <img src="../img/books4.jpg" class="works_books_items">
         </div>
+      
 
         <h2 id="works_cards">名刺・カード</h2>
 
         <div class="works_cards_item">
-            <img src="img/cards1.jpg" class="works_cards_items">
-            <img src="img/cards2.jpg" class="works_cards_items">
+            <img src="../img/cards1.jpg" class="works_cards_items">
+            <img src="../img/cards2.jpg" class="works_cards_items">
         </div>
       </section>  
 
@@ -94,19 +113,17 @@
 
       <div class="profile_name_box">
 
-      <div class="profile_p"  
-      <h1 class="profile_name">Marie Sato</h1>
-      <h3 class="profile_name_kana">さとうまりえ<h3>
-        <p>1983年　宮城県生まれ、名取市在住。</p><br>
-        <p>小１の女の子のママ。</p><br>
-        <p>休日は娘と公園やスポーツ観戦にでかけます。</p><br>
-        <p>現在、フリーランスとしてWEBデザインや画像制作中心に活動中。</p>
+      <div>  
+      <p class="profile_name">Marie Sato</p>
+      <p class="profile_name_kana">さとうまりえ</p><br><br>
+        <p>1983年　宮城県生まれ、名取市在住。</p>
+        <p>小１の女の子のママ。</p>
+        <p>休日は娘と公園やスポーツ観戦にでかけます。</p>
+        <p>現在、フリーランスとしてWEBデザインや<br>画像制作中心に活動中。</p>
       </div>
 
       <div class="profile_photo">
-          <img src="img/about.jpg" alt="Marie Sato" >
-      </div>
-      </div>
+          <img src="../img/about.jpg" alt="Marie Sato" >
       </div>
       </div>
 
@@ -119,7 +136,7 @@
    
            <h3 class="skill_title_language">言語</h3>
            <p>HTML/CSS/WordPress/</p><br>
-           <p>Javascript/PHP</p>
+           <p>Javascript/PHP</p><br>
    
            <h3 class="skill_title_works">実績</h3>
            <p>WEBページ制作</p><br>
@@ -129,7 +146,7 @@
          </div>  
    
            <div class="pc_photo">
-             <img src="img/pc.png">
+             <img src="../img/pc.png">
            </div>
          </section>
          </div>  
@@ -141,11 +158,16 @@
         <h2 class="thoughts_title">Thoughts</h2>
 
         <section class="thoughts_area"></section>
-        <h3 class="thoughts_title_main">想いが伝わるデザイン</h3>
+
+        <div class="thought_area_title">
         <div>
-          <img src="img/green.png">
+          <img src="../img/green.png"class="green">
+        </div>
+        <p class="thoughts_title_main">想いが伝わるデザイン</p>
         </div>
 
+        <div class="thoughts_p_box">
+        <div class="thoughts_p">
         <P>こんな方に届いてほしい、、</p><br>
         <p>もっと良さを伝えられたら、、</P>
 
@@ -155,10 +177,12 @@
 
         <p>なかなか言葉で伝えるのが難しい、</p><br>
         <p>という場合でもお気軽にご相談ください。</p>
+        </div>
 
         <div>
-          <img src="img/flower.png" class="flower_pic">
+          <img src="../img/flower.png" class="flower_pic">
         </div>
+      </div>
       </div>
 
 
@@ -264,6 +288,8 @@
   <footer>
     <p>&copy; MarieWorks. All rights reserved.</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
