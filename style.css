@@ -286,16 +286,19 @@ p {
 .pc_photo {
   max-width: 350px;
   height: fit-content;
+  margin: 200px 0px 50px 50px;
 }
 
 /* thoughtsのところ */
 .thoughts_area {
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 /* thoughtsの緑画像の上に文字 */
 .thought_area_title {
   width: 900px;
-  height: 300px;
+  height: 210px;
   position: relative;
 }
 .green {
@@ -303,10 +306,13 @@ p {
   margin: 0 auto;
   text-align: center;
 }
+.thoughts_title {
+  padding: 0 auto;
+}
 
 .thoughts_title_main {
   position: absolute;
-  bottom: 190px;
+  bottom: 110px;
   left: 300px;
   font-size: 30px;
   color: #000000;
@@ -316,14 +322,14 @@ p {
 }
 
 .flower_pic {
-  width: 130px;
+  width: 160px;
 }
 
 .thoughts_p_box {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px 40px 40px 40px;
 }
 
 /* フッター */
