@@ -357,12 +357,11 @@ footer p {
 }
 /* レイアウトのためのスタイル */
 .swiper {
-  max-width: 500px;
+  max-width: 900px;
   width: 100%;
 }
 .swiper-slide img {
   height: auto;
-  width: 100%;
 }
 .profile_title {
   text-align: center;
