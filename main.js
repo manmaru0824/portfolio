@@ -18,6 +18,10 @@ const sliderThumbnail = new Swiper(".slider-thumbnail", {
 const slider = new Swiper(".slider", {
   loop: true,
   effect: "fade", // フェード
+  fadeEffect: {
+    //ここにオプションを指定します
+    crossFade: true,
+  },
   // 前後の矢印
   navigation: {
     nextEl: ".swiper-button-next",
