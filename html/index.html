@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marie Satouのポートフォリオサイトです。"
+    />
+    <title>MarieWorks</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ナビゲーションメニュー -->
+    <header>
+      <h1 class="sitetitle">Marie Works</h1>
+      <nav>
+        <div class="nav_menu">
+          <a href="#works" class="nav_menu_item">Works</a>
+          <a href="#about" class="nav_menu_item">About</a>
+          <a href="#contact" class="nav_menu_item">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <!-- メイン画像 -->
+        <div class="slider_3">
+          <ul>
+            <li><img src="../img/main.jpg" alt="メイン画像" class="mv" /></li>
+            <li>
+              <img src="../img/main2.jpg" alt="メイン画像" class="mv2" />
+            </li>
+            <li>
+              <img src="../img/main3.jpg" alt="メイン画像" class="mv3" />
+            </li>
+          </ul>
+        </div>
+
+        <!-- Works -->
+        <h1 id="works">Works</h1>
+
+        <section class="works_area">
+          <h2 id="works_title">画像</h2>
+
+          <!-- Slider main container -->
+          <div class="works_images_swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="../img/works1.jpg" class="works_photo_item" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/works2.jpg" class="works_photo_item" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/works3.jpg" class="works_photo_item" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/works4.jpg" class="works_photo_item" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/works5.png" class="works_photo_item" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/works6.jpg" class="works_photo_item" />
+              </div>
+            </div>
+          </div>
+
+          <h2 id="works_title">電子書籍</h2>
+
+          <div class="swiper-wrapper">
+            <div class="works_books_img">
+              <img src="../img/books1.jpg" class="works_books_item" />
+            </div>
+            <div class="works_books_img">
+              <img src="../img/books2.jpg" class="works_books_item" />
+            </div>
+            <div class="works_books_img">
+              <img src="../img/books3.jpg" class="works_books_item" />
+            </div>
+            <div class="works_books_img">
+              <img src="../img/books4.jpg" class="works_books_item" />
+            </div>
+          </div>
+
+          <h2 id="works_title">名刺・カード</h2>
+
+          <div class="swiper-wrapper">
+            <div class="works_cards_img">
+              <img src="../img/card1.jpg" class="works_cards_item" />
+            </div>
+            <div class="works_cards_img">
+              <img src="../img/card2.jpg" class="works_cards_item" />
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <h1 id="about">About</h1>
+
+        <section class="about_area"></section>
+
+        <!-- サムネイル -->
+        <div class="swiper slider-thumbnail">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2 class="swipe_title">Profile</h2>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="swipe_title">Skill</h2>
+            </div>
+            <div class="swiper-slide">
+              <h2 class="swipe_title">Thoughts</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- スライダー -->
+        <div class="swiper slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="profile_name_box">
+                <div>
+                  <p class="profile_name">Marie Sato</p>
+                  <p class="profile_name_kana">さとうまりえ</p>
+                  <br /><br />
+                  <p>1983年　宮城県生まれ、名取市在住。</p>
+                  <p>小１の女の子のママ。</p>
+                  <p>休日は娘と公園やスポーツ観戦にでかけます。</p>
+                  <p>
+                    現在、フリーランスとしてWEBデザインや<br />画像制作中心に活動中。
+                  </p>
+                </div>
+
+                <div class="profile_photo">
+                  <img src="../img/about.jpg" alt="Marie Sato" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="skill_box">
+                <div>
+                  <h3 class="skill_title_language">言語</h3>
+                  <p>HTML/CSS/WordPress/</p>
+                  <br />
+                  <p>Javascript/PHP</p>
+                  <br />
+
+                  <h3 class="skill_title_works">実績</h3>
+                  <p>WEBページ制作</p>
+                  <br />
+                  <p>商品画像作成</p>
+                  <br />
+                  <p>バナー作成</p>
+                  <br />
+                  <p>SNS運用代行</p>
+                  <br />
+                </div>
+
+                <div class="pc_photo">
+                  <img src="../img/pc.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="thought_area_title">
+                <div>
+                  <img src="../img/green.png" class="green" />
+                </div>
+                <p class="thoughts_title_main">想いが伝わるデザイン</p>
+              </div>
+              <section class="thoughts_area">
+                <div class="thoughts_p_box">
+                  <div class="thoughts_p">
+                    <p>こんな方に届いてほしい、、</p>
+                    <br /><br />
+                    <p>もっと良さを伝えられたら、、</p>
+                    <br /><br />
+                    <p>そんなお１人お１人の</p>
+                    <p>想いに寄り添ったデザインを</p>
+                    <p>心がけています</p>
+                    <br /><br />
+                    <p>なかなか言葉で伝えるのが難しい、</p>
+                    <p>という場合でもお気軽にご相談ください。</p>
+                  </div>
+                </div>
+
+                <div>
+                  <img src="../img/flower.png" class="flower_pic" />
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <h1 id="contact">Contact</h1>
+
+        <section class="contact_area"></section>
+        <!-- google formで作成 -->
+        <script src="https://sdk.form.run/js/v2/embed.js"></script>
+        <div
+          class="formrun-embed"
+          data-formrun-form="@marie-marie--gfcf8HdeplzvChV2Rg7D"
+          data-formrun-redirect="true"
+        ></div>
+      </article>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+      <p>&copy; MarieWorks. All rights reserved.</p>
+    </footer>
+    <!-- モーダル -->
+    <div class="modal">
+      <span class="round_btn"></span>
+      <img src="" alt="" class="modal_image" />
+      <div class="modal_close"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
