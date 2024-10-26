@@ -52,3 +52,28 @@ modalButton.forEach((button) => {
     });
   });
 });
+//レスポンシブの記載
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  // 前後の矢印
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // スライドの表示枚数：600px未満の場合
+  slidesPerView: 1,
+  breakpoints: {
+    // スライドの表示枚数：600px以上の場合
+    600: {
+      slidesPerView: 2,
+    },
+    // スライドの表示枚数：768px以上の場合
+    768: {
+      slidesPerView: 3,
+    },
+    // スライドの表示枚数：1025px以上の場合
+    1025: {
+      slidesPerView: 4,
+    },
+  },
+});

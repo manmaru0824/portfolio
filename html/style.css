@@ -29,6 +29,9 @@ main {
     /* 中央に寄せます */
     padding-left: 30px;
   }
+  .swiper-wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 /*サイトタイトル */
@@ -207,6 +210,7 @@ body {
 .works_books_img {
   width: 220px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .works_cards_img {
@@ -425,6 +429,7 @@ body.active {
   visibility: visible;
   width: 60vw;
   height: auto;
+  z-index: 10; /* 閉じるボタンより後ろに表示 */
 }
 
 .modal.active img {
@@ -454,6 +459,7 @@ body.active {
   border: 2px solid #333; /* 枠の調整 */
   border-radius: 50%; /* 丸みの度合い */
   background: #fff; /* ボタンの背景色 */
+  z-index: 20; /* ボタンを背景前に表示 */
 }
 
 .round_btn::before,
