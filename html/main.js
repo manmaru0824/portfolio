@@ -2,14 +2,21 @@ const worksSwiper = new Swiper(".works_images_swiper", {
   loop: true, // ループする
   // effect: "cube", // キューブのエフェクト
   spaceBetween: 20, // スライド間の余白
-  slidesPerView: 3.5, // 画面に表示するスライド数
+  slidesPerView: 1, // 画面に表示するスライド数
   centeredSlides: true, // アクティブなスライドを中央に表示
   speed: 6000, // 少しゆっくり(デフォルトは300)
   autoplay: {
     // 自動再生
     delay: 0, // 0秒後に次のスライド
   },
+  breakpoints: {
+    // スライドの表示枚数：768px以上の場合
+    768: {
+      slidesPerView: 3.5,
+    },
+  },
 });
+
 // サムネイル
 const sliderThumbnail = new Swiper(".slider-thumbnail", {
   slidesPerView: 3, // サムネイルの枚数
@@ -51,29 +58,4 @@ modalButton.forEach((button) => {
       body.classList.remove("active"); // bodyからactiveクラスを削除
     });
   });
-});
-//レスポンシブの記載
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  // 前後の矢印
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  // スライドの表示枚数：600px未満の場合
-  slidesPerView: 1,
-  breakpoints: {
-    // スライドの表示枚数：600px以上の場合
-    600: {
-      slidesPerView: 2,
-    },
-    // スライドの表示枚数：768px以上の場合
-    768: {
-      slidesPerView: 3,
-    },
-    // スライドの表示枚数：1025px以上の場合
-    1025: {
-      slidesPerView: 4,
-    },
-  },
 });
